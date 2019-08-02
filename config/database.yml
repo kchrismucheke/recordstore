@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: chris
+  password: sysadmin
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: recordstore-backend_development
+
+
+test:
+  <<: *default
+  database: recordstore-backend_test
+
+production:
+  <<: *default
+  database: recordstore-backend_production
+  username: recordstore-backend
+  password: <%= ENV['RECORDSTORE-BACKEND_DATABASE_PASSWORD'] %>
