@@ -72,7 +72,7 @@
     "shelljs": "^0.8.3",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0",
-    "tailwindcss": "^0.7.3",
+    "tailwindcss": "^1.0.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.4.2",
